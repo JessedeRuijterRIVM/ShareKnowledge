@@ -1,0 +1,1093 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/devops/documentation/">
+      
+      
+        <link rel="prev" href="../unit_testing/">
+      
+      
+        <link rel="next" href="../packaging/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Documentation - Fact Sharing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Fact Sharing" class="md-header__button md-logo" aria-label="Fact Sharing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fact Sharing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://gitl01-int-p.rivm.nl/EPI/knowledgesharing/pythonpackage" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitl01-Int-P
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Fact Sharing" class="md-nav__button md-logo" aria-label="Fact Sharing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Fact Sharing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://gitl01-int-p.rivm.nl/EPI/knowledgesharing/pythonpackage" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitl01-Int-P
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DevOps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit_testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#readmemd-and-changelogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md and CHANGELOG.md
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="README.md and CHANGELOG.md">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHANGELOG.md
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiki-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiki documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wiki documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation with mkdocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theming-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theming mkdocs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-documentation-and-docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code documentation and docstrings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code documentation and docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clean-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic publishing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../packaging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Packaging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Checks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#readmemd-and-changelogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md and CHANGELOG.md
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="README.md and CHANGELOG.md">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHANGELOG.md
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiki-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiki documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wiki documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation with mkdocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theming-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theming mkdocs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-documentation-and-docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code documentation and docstrings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code documentation and docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clean-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docstrings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic publishing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="documentation">Documentation</h1>
+<h2 id="readmemd-and-changelogmd">README.md and CHANGELOG.md</h2>
+<p>Two must-have files for each repository are <code>README.md</code> and <code>CHANGELOG.md</code>.</p>
+<h3 id="readmemd">README.md</h3>
+<p>This markdown file will be the starting point for every user that wants to use the package. It should at least have a package  description, describe a way to install the package, give some common examples of how to use it, tell you how to contribute to it or who maintains it.</p>
+<p>The readme is meant to be a <em>one-pager</em> or <em>starting guide</em>. It should <strong>not</strong> be used for documenting the whole project unless it is a very small package.</p>
+<p>You can use the following template:</p>
+<pre><code class="language-markdown"># Foobar
+
+Foobar is a Python library for dealing with word pluralization.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
+
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+</code></pre>
+<h3 id="changelogmd">CHANGELOG.md</h3>
+<p>It's a good practice to keep track of your changes per version. It is always possible to look up the all the changes per commit in git, but it is not easy to find in which tagged version you did a change.</p>
+<p>The <code>CHANGELOG.md</code> is a markdown file. Keep track of changes with the following keywords:</p>
+<ul>
+<li><strong>Added</strong> for new features.</li>
+<li><strong>Changed</strong> for changes in existing functionality.</li>
+<li><strong>Deprecated</strong> for soon-to-be removed features.</li>
+<li><strong>Removed</strong> for now removed features.</li>
+<li><strong>Fixed</strong> for any bug fixes.</li>
+<li><strong>Security</strong> in case of vulnerabilities.</li>
+</ul>
+<p>An example of a changelog file could be:</p>
+<pre><code class="language-markdown">## [0.1.1] - 2024-03-20
+- **Added** a ```README.md```.
+
+## [0.1.0] - 2024-03-20
+- **Fixed** the ```find_common_knowledge``` less than 2 persons bug.
+- **Changed** the ```share_fact```-function to be part of ```Person```-class.
+
+## [0.0.1] - 2024-03-19
+- **Added** ```documentation``` about ```linting```.
+</code></pre>
+<h2 id="wiki-documentation">Wiki documentation</h2>
+<p>For larger projects it's a good idea to create a wiki (or wiki-like documentation). Most public packages have similar wiki's. These are static websites generated from markdown or rst files hosted on GitHub pages (or GitLab pages/Azure blob storage).</p>
+<h3 id="documentation-with-mkdocs">Documentation with mkdocs</h3>
+<p>A commonly used engine for creating these websites is <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a>. This is a extensive library for creating documentation, but there are many simpler options.</p>
+<p>For this project I created this documentation using <code>mkdocs</code>. There is a <strong>docs</strong>-folder with all the markdown files. In a <code>mkdocs.yml</code> I configured the settings for generating the website.</p>
+<pre><code class="language-yml"># mkdocs.yml
+
+site_name: Fact Sharing
+site_url: https://example.com/
+repo_url: https://gitl01-int-p.rivm.nl/EPI/knowledgesharing/pythonpackage
+
+nav:
+  - Home: index.md
+  - DevOps:
+    - Linting: devops/linting.md
+    - Unit testing: devops/unit_testing.md
+    - Documentation: devops/documentation.md
+    - Packaging: devops/packaging.md
+  - Reference: reference.md
+</code></pre>
+<p>You can run <code>mkdocs serve</code> to serve the website on localhost, which you can view in the browser. This will automatically update to reflect the changes you make.</p>
+<p>When you want to build the website you can call <code>mkdocs build</code>, which will create a folder <code>site</code> containing the website.</p>
+<h3 id="theming-mkdocs">Theming mkdocs</h3>
+<p>You can customize the theme of the website. I used the <a href="https://squidfunk.github.io/mkdocs-material/">material</a> theme, which provides theming that follows the Google Material Design guidelines.</p>
+<pre><code class="language-yml"># mkdocs.yml
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  palette:
+    - media: &quot;(prefers-color-scheme: light)&quot;
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: &quot;(prefers-color-scheme: dark)&quot;
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+</code></pre>
+<p>I set a custom favicon and logo, made a light/dark theme available with a custom color scheme (from RIVM).</p>
+<h2 id="code-documentation-and-docstrings">Code documentation and docstrings</h2>
+<p>Another important way of documentation is documenting the code itself.</p>
+<h3 id="clean-code">Clean code</h3>
+<p>The best way of documenting code is by writing clear code:</p>
+<ul>
+<li>Proper variable naming (follow the naming conventions of your language).<ul>
+<li>Make names descriptive: <code>facts</code>, <strong>not</strong> <code>f</code> or <code>x</code>.</li>
+<li>Don't include types: <code>persons</code>, <strong>not</strong> <code>person_list</code>.</li>
+<li>Use imperative statement for functions: <code>find_common_knowledge</code>, <strong>not</strong> <code>common_knowledge_from_people</code>.</li>
+</ul>
+</li>
+<li>Separate code in well-scoped functions/classes.</li>
+<li>Using design patterns to reduce coupling.</li>
+</ul>
+<h3 id="comments">Comments</h3>
+<p>Comments should be avoided, especially if the comment describes what the code does.</p>
+<pre><code class="language-python"># Get the common knowledge for 3 persons.
+common_knowledge = find_common_knowledge(persons, 3)
+</code></pre>
+<p>In this case the comment doesn't add any new information.</p>
+<pre><code class="language-python"># NOTE: the minimum_persons needs to be 3 in this specific case, because...
+common_knowledge = find_common_knowledge(persons, 3)
+</code></pre>
+<p>In this we explain why we need 3 people or more in this specific case instead of the usual 2. This is extra context we couldn't get from the code itself.</p>
+<p>In general only write commentst if they fall in one of the following categories:</p>
+<ul>
+<li><strong>NOTE</strong>: Description of how the code works (when it isn't self evident).</li>
+<li><strong>XXX</strong>: Warning about possible pitfalls.</li>
+<li><strong>HACK</strong>: Not very well written or malformed code to circumvent a problem/bug.</li>
+<li><strong>FIXME</strong>: This works, sort of, but it could be done better (usually code written in a hurry that needs rewriting).</li>
+<li><strong>BUG</strong>: There is a problem here.</li>
+<li><strong>TODO</strong>: No problem, but additional code needs to be written, usually when you are skipping something.</li>
+</ul>
+<h3 id="docstrings">Docstrings</h3>
+<p>A good place to describe what a function, class or module does, is in a docstring. There are different docstrings styles and linters. Your IDE will show the docstring when hovering over a function or writing it.</p>
+<p><img alt="Docstring preview" src="../../assets/docstring.png" /></p>
+<p>In this project I used google style:</p>
+<pre><code class="language-python">def function_name(arg1: str, arg2: int = 2) -&gt; list[str]:
+    &quot;&quot;&quot;Short one-line description.
+
+    Optional multi-line description that goes into more details.
+
+    Args:
+        arg1 (str): description of arg1.
+        arg2 (int): description of arg2.
+            Defaults to 2.
+
+    Raises:
+        ValueError: an exception the function can raise.
+
+    Returns:
+        list[str]: description of result.
+
+    Examples:
+        &gt;&gt;&gt; # Example of how to use the function.
+        &gt;&gt;&gt; result = function_name(&quot;hi&quot;)
+        &gt;&gt;&gt; print(result)
+        [&quot;hi&quot;]
+    &quot;&quot;&quot;
+    ...
+</code></pre>
+<p>It is important to not over-do it. Depending on who uses the function and how clear it is you can have a more limited version of the docstring.</p>
+<ul>
+<li>Always have a one-line description.</li>
+<li>Only use the long description if there is more to explain.</li>
+<li>Only use <strong>Args, Raises</strong> and <strong>Returns</strong> if it is not already clear from the function what it entails.</li>
+<li>Only provide <strong>Examples</strong> if it is a function that is used by for example external developers and mainly do this for you most important functions.</li>
+</ul>
+<p>So don't do this:</p>
+<pre><code class="language-python">def multiple_by_2(x: float) -&gt; float:
+    &quot;&quot;&quot;Multiply a number by 2.
+
+    In this function a number is multiplied by 2.
+
+    Args:
+        x (float): the number to be multiplied by 2.
+
+    Returns:
+        float: the number multiplied by 2.
+
+    Examples:
+        &gt;&gt;&gt; print(multiply_by_2(3.0))
+        6.0
+    &quot;&quot;&quot;
+    return x * 2
+</code></pre>
+<p>Most IDEs have plugins to generate docstring templates. If you use co-pilot it can generate the whole docstring for you including contents.</p>
+<p>I used the <code>autoDocstring</code> extension in VScode to generate a docstring template after writing the function header.</p>
+<h2 id="documentation-generation">Documentation generation</h2>
+<p>Another advantage of using docstrings is you can use them to generate reference documentation.</p>
+<p>Mkdocs has a plugin called <a href="https://mkdocstrings.github.io/">mkdocstrings</a>. You can configure this plugin in the <code>mkdocs.yml</code>.</p>
+<pre><code class="language-yml">plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_root_heading: true
+            show_source: true
+</code></pre>
+<p>You can add the reference to a package, module, class or function in the markdown files.</p>
+<pre><code class="language-yml"># mkdocs.yml
+::: fact_sharing
+
+::: fact_sharing.find_common_knowledge
+</code></pre>
+<p>This will generate reference documentation using the docstrings, like <a href="https://jessederuijterrivm.github.io/ShareKnowledge/reference/">so</a>.</p>
+<p>You can reference these objects in the rest of the website:</p>
+<pre><code class="language-markdown">[][fact_sharing.find_common_knowledge]
+</code></pre>
+<p>Click on <a class="autorefs autorefs-internal" href="../../reference/#fact_sharing.find_common_knowledge"><code>reference</code></a>.</p>
+<h2 id="automatic-publishing">Automatic publishing</h2>
+<p>The last step is to host the documentation. Running <code>mkdocs build</code> creates a folder with a static website. This website can be hosted on:</p>
+<ul>
+<li>GitHub pages</li>
+<li>GitLab pages</li>
+<li>Azure blob storage</li>
+<li>AWS S3</li>
+<li>Any hosting platform</li>
+</ul>
+<p>We don't have GitLab pages available at RIVM, so I decided to publish it to a personal RIVM GitHub account, which is not ideal.</p>
+<pre><code class="language-yml">#.gitlab-ci.yml
+stages:
+- build
+- publish
+
+build_docs:
+  stage: build
+  script:
+    - pip install mkdocs mkdocs-material mkdocstrings[python]
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+
+set_git:
+  stage: publish
+  script:
+    - cd public
+    - git config --global init.defaultBranch main
+    - git init
+    - git config user.name &quot;CI Pipeline&quot;
+    - git config user.email &quot;cipipeline@example.com&quot;
+    - git config remote.pages.url &gt;&amp;- || git remote add pages https://token:${GITHUB_PAT}@github.com/JessedeRuijterRIVM/ShareKnowledge.git/
+    - git fetch pages
+    - git add .
+    - git commit -m &quot;Update documentation [skip ci]&quot;
+    - git push -u pages HEAD:main --force
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+</code></pre>
+<p>In the <em>documentation</em> stage it will build the documentation and initialize a git-repo. In <em>publish</em> stage the code is force pushed to GitHub.
+These jobs only run on the default branch (main).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
